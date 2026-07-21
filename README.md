@@ -1,27 +1,54 @@
 # Weather Dashboard
 
-A real-time weather dashboard application built using Python, Streamlit, and OpenWeather API. The application allows users to search for any city and view current weather conditions along with a 5-day forecast through an interactive and modern interface.
+A modern real-time weather intelligence dashboard built using Python, Streamlit, and OpenWeather API. The application provides live weather information and a 5-day forecast through a clean, responsive, dark-themed user interface.
 
 ## Overview
 
-Weather Dashboard is a Python-based application that integrates with the OpenWeather API to fetch live weather information. The application provides users with detailed weather insights such as temperature, humidity, wind speed, atmospheric pressure, visibility, sunrise, sunset timings, and upcoming weather forecasts.
+Weather Dashboard is a web-based weather application that fetches real-time weather data from the OpenWeather API and presents it through an interactive dashboard.
 
-The project focuses on API integration, real-time data processing, and building a clean user interface using Streamlit.
+Users can search for any city worldwide and view detailed weather insights including temperature, humidity, wind speed, atmospheric pressure, visibility, sunrise, sunset, and upcoming forecast data.
+
+The project focuses on API integration, real-time data processing, modern UI development, and responsive dashboard design using Streamlit.
 
 ## Features
 
-- Real-time weather data retrieval using OpenWeather API
-- Search weather information by city name
-- Current temperature and feels-like temperature
-- Weather condition display with dynamic icons
-- Humidity monitoring
-- Wind speed information
-- Atmospheric pressure details
-- Visibility measurement
-- Sunrise and sunset timings
+### Real-Time Weather Information
+
+- Search weather data by city name
+- Current temperature display
+- Feels-like temperature
+- Weather condition monitoring
+- Location-based weather details
+
+### Weather Metrics
+
+- Humidity percentage
+- Wind speed
+- Atmospheric pressure
+- Visibility distance
+
+### Sun Information
+
+- Sunrise timing
+- Sunset timing
+- Day progress visualization between sunrise and sunset
+
+### Forecast System
+
 - 5-day weather forecast
-- Modern dark-themed user interface
-- Responsive dashboard layout
+- Daily temperature prediction
+- Weather condition summary
+- Forecast visualization cards
+
+### User Interface
+
+- Modern dark-themed dashboard
+- Glassmorphism design
+- Responsive layout
+- Custom CSS styling
+- Interactive hover effects
+- Smooth UI animations
+- Clean dashboard components
 
 ## Tech Stack
 
@@ -40,8 +67,7 @@ The project focuses on API integration, real-time data processing, and building 
 ### Libraries Used
 
 - requests - API communication
-- python-dotenv - Environment variable management
-- datetime - Date and time processing
+- datetime - Time and date processing
 
 ## Project Structure
 
@@ -51,25 +77,25 @@ Weather-App/
 ├── app.py              # Main Streamlit application
 ├── config.py           # API key configuration
 ├── requirements.txt    # Project dependencies
-├── README.md           # Project documentation
+├── README.md           # Documentation
 └── .gitignore          # Ignored files
 ```
 
 ## Installation and Setup
 
-### 1. Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/gkyuvashree/Weather-App.git
 ```
 
-### 2. Navigate to Project Directory
+### Navigate to the Project Directory
 
 ```bash
 cd Weather-App
 ```
 
-### 3. Create Virtual Environment
+### Create Virtual Environment
 
 ```bash
 python -m venv venv
@@ -83,7 +109,7 @@ Windows:
 venv\Scripts\activate
 ```
 
-### 4. Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -91,13 +117,13 @@ pip install -r requirements.txt
 
 ## API Configuration
 
-This project uses the OpenWeather API to fetch real-time weather information.
+This application uses OpenWeather API for retrieving weather information.
 
 ### Steps:
 
 1. Create an account on OpenWeather.
 2. Generate an API key.
-3. Create a file named:
+3. Create a file:
 
 ```
 config.py
@@ -109,61 +135,82 @@ config.py
 API_KEY = "your_api_key_here"
 ```
 
-Replace `your_api_key_here` with your actual OpenWeather API key.
+Replace `your_api_key_here` with your actual API key.
 
 ## Running the Application
 
-Start the Streamlit application using:
+Run the Streamlit application:
 
 ```bash
 streamlit run app.py
 ```
 
-The application will automatically open in your browser.
+The application will open automatically in your browser.
 
 ## Application Workflow
 
 1. User enters a city name.
-2. The application sends a request to the OpenWeather API.
-3. Weather data is received in JSON format.
-4. The application processes the response.
-5. Weather information is displayed through the Streamlit dashboard.
+2. Application sends a request to OpenWeather API.
+3. API returns weather information in JSON format.
+4. Weather data is processed using Python.
+5. Streamlit displays the information through an interactive dashboard.
 
-## Weather Information Displayed
+## Weather Data Displayed
 
 The dashboard provides:
 
 - Current weather condition
 - Temperature
 - Feels-like temperature
-- Humidity percentage
+- Humidity
 - Wind speed
 - Atmospheric pressure
-- Visibility distance
+- Visibility
 - Sunrise time
 - Sunset time
-- Five-day weather forecast
+- 5-day forecast
+
+## Design Highlights
+
+The interface includes:
+
+- Custom CSS-based design system
+- Dark futuristic theme
+- Glass-effect cards
+- Responsive dashboard layout
+- Minimal and professional UI components
+- Smooth transitions and hover interactions
+
+## Error Handling
+
+The application handles:
+
+- Invalid city names
+- API request failures
+- Network errors
+- Missing weather data
 
 ## Future Improvements
 
-- Add hourly weather forecast visualization
-- Add weather maps using geolocation
-- Add user current location detection
+- Add automatic user location detection
+- Add interactive weather maps
+- Add hourly weather forecast
+- Add historical weather analytics
 - Add weather alerts and notifications
-- Add historical weather analysis
-- Deploy application using Streamlit Cloud
+- Deploy using Streamlit Cloud
 
 ## Learning Outcomes
 
-This project helped implement:
+Through this project, the following concepts were implemented:
 
-- API integration
+- REST API integration
+- JSON data processing
 - HTTP requests
-- JSON data parsing
 - Real-time data handling
 - Streamlit application development
-- User interface design
+- Custom UI/UX design
 - Environment variable management
+- Error handling in API-based applications
 
 ## Author
 
