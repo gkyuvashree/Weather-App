@@ -69,6 +69,11 @@ The project focuses on API integration, real-time data processing, modern UI dev
 - requests - API communication
 - datetime - Time and date processing
 
+
+##  Live Demo
+
+https://weather-app-oaehaqgkvrwskyeg5uo2qt.streamlit.app/
+
 ## Project Structure
 
 ```
