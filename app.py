@@ -1,8 +1,7 @@
 import streamlit as st
 import requests
 from datetime import datetime
-from config import API_KEY
-
+API_KEY = st.secrets["API_KEY"]
 # ---------------- PAGE CONFIG ----------------
 
 st.set_page_config(
